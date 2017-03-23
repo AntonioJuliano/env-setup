@@ -1,4 +1,5 @@
 cp .bash_profile ~/.bash_profile
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update && brew upgrade
 brew install node docker docker-compose docker-cloud mongodb wget
 
@@ -17,7 +18,7 @@ read
 
 git config --global user.name "Antonio Juliano"
 git config --global user.email antonio.m.juliano@gmail.com
-ssh-keygen -t rsa -b 4096 -C "antonio.m.juliano@example.com"
+ssh-keygen -t rsa -b 4096 -C "antonio.m.juliano@gmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 /usr/bin/open -a "/Applications/Google Chrome.app" 'https://github.com/'
